@@ -1,6 +1,6 @@
 import mongoose, { Document } from 'mongoose';
 
-export interface IAttendanceRecord extends Document {
+interface IAttendanceRecord extends Document {
   netID: string;
   uin: string;
   classId: string;

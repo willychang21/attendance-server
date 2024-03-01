@@ -23,7 +23,7 @@ export const addRecord = async (req: Request, res: Response) => {
 
 /// Delete a record by ID
 export const deleteRecord = async (req: Request, res: Response) => {
-  const { id } = req.params; // Assuming you're passing the record ID as a URL parameter
+  const { id } = req.params;
   console.log("Deleting record with id: ", id)
   try {
     const result = await AttendanceRecord.findByIdAndDelete(id);
